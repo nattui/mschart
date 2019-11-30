@@ -4,11 +4,7 @@
 
 
 /* Base: Reset ----------------------------------------- */
-body {
-  margin: 0;
-  overflow: hidden;
-}
-
+body { margin: 0 }
 canvas {
   display: block;
   height: 100vh;
