@@ -1,0 +1,17 @@
+{
+  "name": "visualization-learn",
+  "version": "1.0.0",
+  "description": "Learning threejs for research assistant at San Jose State University.",
+  "scripts": {
+    "serve": "parcel src/index.html -d dist/development/ --open",
+    "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./"
+  },
+  "author": "Nhat Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.111.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
