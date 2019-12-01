@@ -1,11 +1,12 @@
 import * as THREE from 'three';
 import OrbitControls from 'three-orbitcontrols';
 
+
 /**
  * Creates a box mesh
  * @param {number} x - the position on the x-axis
  * @param {number} z - the position on the z-axis
- * @param {THREE.BoxGeometry} geometry - geometry
+ * @param {THREE.BoxGeometry} geometry - the geometry
  * @param {THREE.MeshLambertMaterial} material - the material
  * @return {THREE.Mesh} the mesh
  */
@@ -14,6 +15,7 @@ const createBox = (x, z, geometry, material) => {
   box.position.set(x, box.geometry.parameters.height / 2, z);
   return box;
 }
+
 
 // Setup ------------------------------------------------ /
 // Renderer
@@ -39,26 +41,60 @@ controls.enableDamping = true;
 controls.maxPolarAngle = Math.PI / 2 - 0.1;
 controls.minDistance = 8;
 controls.maxDistance = 64;
-// controls.target = (new THREE.Vector3(2, 0, 2));
+controls.target = (new THREE.Vector3(3, 0, 3));
 controls.update();
 
 // Meshes
-const box1 = createBox(-2, -2, new THREE.BoxGeometry(1, 2, 1), new THREE.MeshLambertMaterial({ color: 0xcFFCC00 }));
-const box2 = createBox(2, 2, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0xcFF0000 }));
-scene.add(box1);
-scene.add(box2);
+const box0_0 = createBox(0, 0, new THREE.BoxGeometry(1, 2, 1), new THREE.MeshLambertMaterial({ color: 0xff6b6b }));
+const box0_1 = createBox(0, 2, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x845ef7 }));
+const box0_2 = createBox(0, 4, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x339af0 }));
+const box0_3 = createBox(0, 6, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x51cf66 }));
+scene.add(box0_0);
+scene.add(box0_1);
+scene.add(box0_2);
+scene.add(box0_3);
 
-//
-let geometry = new THREE.CircleGeometry(5, 64);
-let material = new THREE.MeshBasicMaterial({ color: 0xdee2e6 });
-const circle = new THREE.Mesh(geometry, material);
-circle.lookAt(new THREE.Vector3(0, 1, 0));
-scene.add(circle);
+const box1_0 = createBox(2, 0, new THREE.BoxGeometry(1, 2, 1), new THREE.MeshLambertMaterial({ color: 0xff6b6b }));
+const box1_1 = createBox(2, 2, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x845ef7 }));
+const box1_2 = createBox(2, 4, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x339af0 }));
+const box1_3 = createBox(2, 6, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x51cf66 }));
+scene.add(box1_0);
+scene.add(box1_1);
+scene.add(box1_2);
+scene.add(box1_3);
+
+const box2_0 = createBox(4, 0, new THREE.BoxGeometry(1, 2, 1), new THREE.MeshLambertMaterial({ color: 0xff6b6b }));
+const box2_1 = createBox(4, 2, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x845ef7 }));
+const box2_2 = createBox(4, 4, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x339af0 }));
+const box2_3 = createBox(4, 6, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x51cf66 }));
+scene.add(box2_0);
+scene.add(box2_1);
+scene.add(box2_2);
+scene.add(box2_3);
+
+const box3_0 = createBox(6, 0, new THREE.BoxGeometry(1, 2, 1), new THREE.MeshLambertMaterial({ color: 0xff6b6b }));
+const box3_1 = createBox(6, 2, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x845ef7 }));
+const box3_2 = createBox(6, 4, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x339af0 }));
+const box3_3 = createBox(6, 6, new THREE.BoxGeometry(1, 4, 1), new THREE.MeshLambertMaterial({ color: 0x51cf66 }));
+scene.add(box3_0);
+scene.add(box3_1);
+scene.add(box3_2);
+scene.add(box3_3);
+
+// Circle
+const disk = new THREE.Mesh(new THREE.CircleGeometry(7, 64), new THREE.MeshBasicMaterial({ color: 0xdee2e6 }));
+disk.position.set(3, 0, 3);
+disk.lookAt(new THREE.Vector3(3, 3, 3));
+scene.add(disk);
 
 // Light
-const light = new THREE.PointLight(0xFFFFFF, 1, 500);
-light.position.set(25, 10, 25);
-scene.add(light);
+const light1 = new THREE.PointLight(0xFFFFFF, 1, 500);
+light1.position.set(25, 10, 25);
+scene.add(light1);
+const light2 = new THREE.PointLight(0xFFFFFF, 1, 500);
+light2.position.set(-25, 10, -25);
+scene.add(light2);
+
 
 // Animate ---------------------------------------------- /
 const animate = () => {
@@ -70,6 +106,7 @@ const animate = () => {
 }
 
 animate();
+
 
 // Resize ----------------------------------------------- /
 window.addEventListener('resize', () => {
