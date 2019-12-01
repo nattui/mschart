@@ -1,4 +1,4 @@
-# 3D Data Visualization Demonstration
+# 3D Data Visualization Demonstration &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nattwasm/visualization-learn/pulls)
 
 ![Project Banner](./screens/screenshot.png)
 
