@@ -9,7 +9,8 @@
   "author": "Nhat Nguyen",
   "license": "MIT",
   "dependencies": {
-    "three": "^0.111.0"
+    "three": "^0.111.0",
+    "three-orbitcontrols": "^2.110.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
