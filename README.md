@@ -1,6 +1,8 @@
-# 3D Visualization Example
+# 3D Data Visualization Demonstration
 
 ![Project Banner](./screens/screenshot.png)
+
+[⚡ Demo](https://threejs-data-visualization.s3.amazonaws.com/index.html)
 
 Learning threejs for professor assistant at San Jose State University.
 Viewers can click and drag to rotate the 3D bar graph.
