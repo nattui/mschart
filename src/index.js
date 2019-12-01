@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import OrbitControls from 'three-orbitcontrols';
 import data from './data.json';
 
+
 /**
  * Creates a box mesh
  * @param {number} x - the position on the x-axis
@@ -30,10 +31,6 @@ const createLine = endPosition => {
 
 
 // Setup ------------------------------------------------ /
-console.log('data');
-// console.log(data);
-// console.log(data[count]['name'], '-', data[count]['race'], data[count]['age'] / 10);
-
 // Renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
