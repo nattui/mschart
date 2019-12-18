@@ -7,11 +7,13 @@ import data from './data.json';
  * Creates a box mesh
  * @param {number} x - the position on the x-axis
  * @param {number} z - the position on the z-axis
- * @param {THREE.BoxGeometry} geometry - the geometry
- * @param {THREE.MeshLambertMaterial} material - the material
+ * @param {number} height - the height of the geometry
+ * @param {number} color - the color in hex
  * @return {THREE.Mesh} the mesh
  */
-const createBox = (x, z, geometry, material) => {
+const createBox = (x, z, height, color) => {
+  const geometry = new THREE.BoxGeometry(1, height, 1);
+  const material = new THREE.MeshLambertMaterial({ color: color });
   const box = new THREE.Mesh(geometry, material);
   box.position.set(x, box.geometry.parameters.height / 2, z);
   return box;
@@ -23,8 +25,8 @@ const createBox = (x, z, geometry, material) => {
  * @return {THREE.Line} the mesh
  */
 const createLine = endPosition => {
-  const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
   const geometry = new THREE.Geometry();
+  const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
   geometry.vertices.push(new THREE.Vector3(-1, 0, -1), endPosition);
   return new THREE.Line(geometry, material);
 }
@@ -49,7 +51,6 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
 controls.autoRotateSpeed = 5;
 controls.enableDamping = true;
-// controls.minPolarAngle = 0;
 controls.maxPolarAngle = Math.PI / 2 - 0.1;
 controls.minDistance = 8;
 controls.maxDistance = 64;
@@ -65,7 +66,7 @@ for (let i = 0; i < 4; i++) {
     if (j === 1) colorValue = 0x845ef7;
     if (j === 2) colorValue = 0x339af0;
     if (j === 3) colorValue = 0x51cf66;
-    box = createBox(i * 2, j * 2, new THREE.BoxGeometry(1, data[count]['age'] / 10, 1), new THREE.MeshLambertMaterial({ color: colorValue }));
+    box = createBox(i * 2, j * 2, data[count]['age'] / 10, colorValue);
     scene.add(box);
     count++;
   }
