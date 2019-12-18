@@ -1,8 +1,7 @@
-# 3D Data Visualization Demonstration &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nattwasm/visualization-learn/pulls)
+# 3D Data Visualization &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nattwasm/visualization-learn/pulls)
 
-![Project Banner](./screens/screenshot.png)
-
-[⚡ Demo](https://threejs-data-visualization.s3.amazonaws.com/index.html)
+[![Demo](./screens/screenshot.gif)](https://threejs-data-visualization.s3.amazonaws.com/index.html)
+(Click on the image for live demo)
 
 Learning threejs for professor assistant at San Jose State University.
 Viewers can click and drag to rotate the 3D bar graph.
