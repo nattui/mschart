@@ -1,10 +1,10 @@
-# 3D Data Visualization &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nattwasm/visualization-learn/pulls)
+# Multiple Series 3D Bar Chart &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nattwasm/visualization-learn/pulls)
 
 [![Demo](./screens/screenshot.gif)](https://threejs-data-visualization.s3.amazonaws.com/index.html)
 (Click on the image for live demo)
 
-Learning threejs for professor assistant at San Jose State University.
-Viewers can click and drag to rotate the 3D bar graph.
+Demonstration of a multiple series three-dimensional bar chart using Three.js.
+Viewers can click and drag to rotate the visualization.
 
 ## Getting Started
 
