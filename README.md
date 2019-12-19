@@ -6,7 +6,7 @@
 Demonstration of a multiple series three-dimensional bar chart using Three.js.
 Viewers can click and drag to rotate the visualization.
 
-## 🚀 Technologies
+## 💻 Technologies
 ![Technologies Banner](./screens/technologies-banner.png)
 
 Javascript Ecosystem
@@ -14,7 +14,7 @@ Javascript Ecosystem
 - [Parceljs](https://parceljs.org/) - Web bundler
 - [Firebase](https://firebase.google.com/) - [In progress] Hosting
 
-## ⚡ Getting Started
+## 🚀 Getting Started
 
 ### Installing the project
 
