@@ -1,7 +1,7 @@
 {
-  "name": "visualization-learn",
+  "name": "mschart",
   "version": "1.0.0",
-  "description": "Learning threejs for research assistant at San Jose State University.",
+  "description": "⚡ Multiple Series 3D Bar Chart - Demonstration of a multiple series three-dimensional bar chart using Three.js",
   "scripts": {
     "serve": "parcel src/index.html -d dist/development/ --open",
     "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./"
