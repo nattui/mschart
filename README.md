@@ -12,7 +12,7 @@ Viewers can click and drag to rotate the visualization.
 Javascript Ecosystem
 - [Threejs](https://threejs.org/) - 3D graphics
 - [Parceljs](https://parceljs.org/) - Web bundler
-- [Firebase](https://firebase.google.com/) - [In progress] Hosting
+- [ZEIT](https://zeit.co/) - Hosting
 
 ## 🚀 Getting Started
 
