@@ -1,6 +1,6 @@
 # Multiple Series 3D Bar Chart &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nattwasm/mschart/pulls)
 
-[![Spinning Multiple Series 3D Bar Chart](./screens/screenshot.gif)](https://threejs-data-visualization.s3.amazonaws.com/index.html)
+[![Spinning Multiple Series 3D Bar Chart](./screens/screenshot.gif)](https://mschart.now.sh)
 (Click on the image for live demo 👆)
 
 Demonstration of a multiple series three-dimensional bar chart using Three.js.
