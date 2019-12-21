@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "serve": "parcel src/index.html -d dist/development/ --open",
-    "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./"
+    "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
+    "deploy": "now"
   },
   "author": "Nhat Nguyen",
   "license": "MIT",
