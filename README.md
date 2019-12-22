@@ -25,13 +25,19 @@ npm install
 ### Running the project
 
 ```
-npm run serve
+npm run dev
 ```
 
 ### Building the project
 
 ```
 npm run build
+```
+
+### Preview Deployments (ZEIT)
+
+```
+npm run deploy
 ```
 
 ## 📄 License
