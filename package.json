@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "serve": "parcel src/index.html -d dist/development/ --open",
+    "dev": "parcel src/index.html -d dist/development/ --open",
     "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
     "deploy": "now"
   },
