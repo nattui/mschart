@@ -34,12 +34,6 @@ npm run dev
 npm run build
 ```
 
-### Preview Deployments (ZEIT)
-
-```
-npm run deploy
-```
-
 ## 📄 License
 All parts of this project are free to use and abuse under the open-source [MIT license](./LICENSE).
 
