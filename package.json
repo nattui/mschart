@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "parcel src/index.html -d dist/development/ --open",
     "build": "parcel build src/index.html -d dist/production/ --no-source-maps --public-url ./",
-    "deploy": "now"
+    "now:dev": "now dev",
+    "now:deploy": "now"
   },
   "author": "Nhat Nguyen",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "three-orbitcontrols": "^2.110.3"
   },
   "devDependencies": {
+    "now": "^16.7.0",
     "parcel-bundler": "latest"
   }
 }
